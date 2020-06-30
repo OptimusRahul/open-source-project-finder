@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Open Source Project Finder</title>
+        <link rel="stylesheet" href='./css/stylesheet.css'>
+    </head>
+    <body id="body">
+        <header class="header">
+            <h1>Start Your Open Source Journey</h1>
+        </header>
+        <section class="search__container" id="searchInput">
+            <!-- <form onsubmit="getData()" method="GET"> -->
+                <input class="search__input" type="list" list="prg" id="list">
+                <datalist id="prg">
+                    <option value="C" onselect="init('C')"></option>
+                    <option value="C++" onselect="init('C++')"></option>
+                    <option value="Java" onselect="init('Java')"></option>
+                    <option value="Python" onselect="init('Python')"></option>
+                    <option value="Javascript" onselect="init('Javascript')"></option>
+                </datalist>
+                <button class="submitBtn" id="submitBtn" onclick="getData()">Submit</button>
+            <!-- </form> -->
+            <!--button class="githubBtn" id="githubBtn" onclick="init()">Login With Github</!--button-->
+        </section>
+        <div class='result' id='result'>
+        <div>
+        <div class='pagination' id='pagination'>
+            
+        </div>
+        <script src="./js/script.js" type="text/javascript"></script>
+    </body>
+</html>

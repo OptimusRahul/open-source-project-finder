@@ -1,0 +1,168 @@
+body{
+    background: #c94b4b;
+    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+    background: linear-gradient(to right, #4b134f, #c94b4b);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.searchInput {
+    display: flex;
+    justify-content: center;
+}
+
+.search__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+
+}
+
+.search__input {
+    width: 50%;
+    padding: 12px 24px;
+
+    background-color: white;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    
+    color: #575756;
+    /*background-color: white;    
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+        /*color: rgba(87, 87, 86, 0.8);*/
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+.search__input:hover,
+    .search__input:focus {
+        padding: 12px 0;
+        outline: 0;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #575756;
+        border-radius: 0;
+        background-position: 100% center;
+    }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    padding: 10px;
+    min-height: 200px;
+    width: 300px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.wrapper:hover{
+    transform: scale(1.1);
+}
+
+.page-header {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 50px;
+    border-color: 2px solid black;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.title{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.project {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.font {
+    font-size: 13px;
+    color: red;
+}
+
+.result {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-body {
+    flex-grow: 1;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_number {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 10px;
+}
+
+.githubBtn{
+    margin-left: 5px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.submitBtn{
+    margin-left: 5px;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}

@@ -3,3 +3,4 @@ node_modules/
 controller/
 routes/
 data.json
+.cache/

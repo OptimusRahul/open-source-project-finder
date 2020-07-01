@@ -1,2 +1,2 @@
 # Open-Source-Project-Finder
-![Alt Text](https://drive.google.com/file/d/1Gw4-rsXTq95eJStjlLD-oXavGXoePh2u/view?usp=sharing.gif)
+![Alt Text](https://github.com/OptimusRahul/Open-Source-Project-Finder/blob/master/OpenSourceProjectFinderDemo-min.gif)

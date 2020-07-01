@@ -21,12 +21,16 @@ var insertNode = false;
 
 function getData(event){
     var lang = document.getElementById("list").value;
-    //document.getElementById('list').value = "";
+    document.getElementById('list').value = "";
     if(currentLang !== lang) paginatedlang = false;
     /*if(access_token === undefined){
         init(lang);
     } else {*/
-        getGithubData(event, access_token, 1, lang);
+        if(lang === '') {
+            alert('Invalid Language');
+        } else {
+            getGithubData(event, access_token, 1, lang);
+        }
     //}
 }
 
@@ -78,6 +82,8 @@ async function getGithubData(e, oauthToken, page, lang){
                 //'Authorization': `token ${oauthToken}`
             })
         });
+
+        console.log(data);
         
         if(data.message){
             location.reload();
@@ -184,14 +190,13 @@ function pagination(total_count){
     var onePage = 30;
     var total_page_number = Math.ceil(total_count / onePage);
     page = total_page_number;
+    console.log(total_page_number, total_count);
     paginatedlang = true;
     var paginate = createElement('div');
     paginate.className = 'pagination'
     paginate.id = 'pagination'
     paginate.innerHTML = `
-        <button>prev</button>
             ${getAllPageNumber(total_page_number)}
-        <button>next</button>
     `;
     var referenceNode = document.getElementById('result');
     //referenceNode.parentNode.removeChild('paginate');
